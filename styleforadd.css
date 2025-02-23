@@ -1,0 +1,212 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    background-color: #90b1bb;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #90b1bb; /* Grey background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: bold;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    font-family: bold;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+button {
+    margin-top: 30px;;
+    padding: 10px;
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: bold;
+   
+}
+
+button:hover {
+
+    background: linear-gradient(500deg, #ff0000, #000000);
+    transform: scale(1.15);
+}
+
+.back-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 2px 6px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+/* Customer List */
+#customerList {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#customerList li {
+    padding: 10px;
+    background: #e9ecef;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+#customerList li:hover {
+    background: #d6d8db;
+}
+
+/* Customer Details Table - New Stylish Look */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid black; /* Solid black line at the bottom */
+    display: none; /* Hide table by default */
+}
+
+.customer-table {
+    display: none;
+    margin-top: 10px;
+}
+
+.customer-table.active {
+    display: table; /* Show table when active */
+}
+
+table th {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table td {
+    padding: 10px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background: #e9ecef;
+    border-radius: 50px;
+}
+
+tr:hover td {
+    background: #d6d8db;
+    transition: background 0.3s;
+    border-radius: 50px;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 68px;
+    left: 220px;
+    padding: 5px;
+    width: 80px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #218838;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+

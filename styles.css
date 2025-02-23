@@ -1,0 +1,159 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif, bold; 
+    background-color: #90b1bb;
+    text-align: center;
+}
+
+.container {
+    overflow-x: hidden; /* Prevents content from spilling out */
+    padding: 15px;
+    flex: auto;
+    background-color: #90b1bb;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #90b1bb;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: bold;
+    padding: 50px;
+    height: 900px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #7b7c7e;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #5c8aa8;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Customer List */
+#customerList {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#customerList li {
+    padding: 10px;
+    background: #e9ecef;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#customerList li:hover {
+    background: #d6d8db;
+}
+
+/* Customer Details Table - New Stylish Look */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid black;
+}
+
+table th {
+    background: #00ffb3;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table td {
+    padding: 10px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background: #e9ecef;
+}
+
+tr:hover td {
+    background: #d6d8db;
+    transition: background 0.3s;
+}
+.customer-details-table td{
+    padding: 5px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Customers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="allcustomers.html">All Customers</a></li>
+                <li><a href="add.html">Add Customer</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Customer List Section -->
+        <section id="allCustomersSection">
+            <h2>All Customers</h2>
+            <ul id="customerList"></ul>
+        </section>
+
+        <!-- Customer Details Table -->
+        <section id="customerDetailsSection" style="display: none;">
+            <h2>Customer Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Section 1</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id="customerDetails"></tbody>
+            </table>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
